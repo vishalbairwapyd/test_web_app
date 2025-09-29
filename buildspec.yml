@@ -12,7 +12,7 @@ phases:
 		commands:
 			- echo Entered the build phase..
 			- echo Build Started
-			- grep -Fq "yolo" index.html
+			- grep -Fq "Home" index.html
 		finally:
 			- echo This always runs even if the install command fails
 
