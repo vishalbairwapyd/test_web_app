@@ -3,29 +3,22 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Entered the install phase..."
-      - echo "Installing dependencies..."
+      - echo Entered the install phase...
+      - echo Installing dependencies...
 
   pre_build:
     commands:
-      - echo "Entered the pre_build phase..."
+      - echo Entered the pre_build phase...
 
   build:
     commands:
-      - echo "Entered the build phase..."
-      - echo "Build Started"
+      - echo Entered the build phase...
+      - echo Build Started
       - grep -Fq "Home" index.html
     finally:
-      - echo "This always runs even if the install command fails"
+      - echo This always runs even if the install command fails
 
   post_build:
     commands:
-      - echo "Entered the post_build phase..."
-      - echo "Build completed"
-
-artifacts:
-  files:
-    - index.html
-    - style.css
-    - buildspec.yml
-  discard-paths: yes
+      - echo Entered the post_build phase...
+      - echo Build completed....
