@@ -23,7 +23,4 @@ phases:
       - echo "Entered the post_build phase..."
       - echo "Build completed"
 
-artifacts:
-  files:
-    - index.html
-    - style.css
+
